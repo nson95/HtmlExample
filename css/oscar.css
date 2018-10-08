@@ -1,0 +1,21 @@
+
+.twiceAsBig {
+    font-size: 2em;
+    font-weight: bold;
+}
+.rightJust {
+    text-align: right;
+}
+div {
+    width: 49%;
+    display: inline-block;
+}
+.top {
+    vertical-align: top;
+}
+html {
+    background: cadetblue
+}
+.isOrange {
+    background: darkorange
+}
