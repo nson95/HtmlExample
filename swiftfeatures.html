@@ -1,0 +1,72 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Features</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="css/swift.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="centered">
+    <div id="menu">
+        <a href="c:repos/HtmlExample/swiftindex.html" class="btn btn-light" role="button">Main</a>
+        <a href="c:repos/HtmlExample/swifthistory.html" class="btn btn-light" role="button">History</a>
+        <a href="c:repos/HtmlExample/swiftfeatures.html" class="btn btn-light" role="button">Features</a>
+        <a href="c:repos/HtmlExample/swiftexamples.html" class="btn btn-light" role="button">Examples</a>
+    </div>
+    <h1 class="big">Features</h1>
+    <div>
+        <h1>Syntactic sugar</h1>
+        Under the Cocoa and Cocoa Touch environments, many common classes were part
+        of the Foundation Kit library. This included the NSString string library (using Unicode),
+        the NSArray and NSDictionary collection classes, and others. Objective-C provided
+        various bits of syntactic sugar to allow some of these objects to be created
+        on-the-fly within the language, but once created, the objects were manipulated 
+        with object calls.
+    </div>
+    <div>
+        <h1>Access control</h1>
+        Swift supports five access control levels for symbols: open, public, internal, 
+        fileprivate, and private. Unlike many object-oriented languages, these access 
+        controls ignore inheritance hierarchies: private indicates that a symbol is 
+        accessible only in the immediate scope, fileprivate indicates it is accessible only 
+        from within the file, internal indicates it is accessible within the containing module, 
+        public indicates it is accessible from any module, and open (only for classes and their 
+        methods) indicates that the class may be subclassed outside of the module.
+    </div>
+    <div>
+        <h1>Optionals and chaining</h1>
+        An important new feature in Swift is option types, which allow references or values to 
+        operate in a manner similar to the common pattern in C, where a pointer may refer to a 
+        value or may be null. This implies that non-optional types cannot result in a null-pointer 
+        error; the compiler can ensure this is not possible.
+    </div>
+    <div>
+        <h1>Value types</h1>
+        In many object-oriented languages, objects are represented internally in two parts. The 
+        object is stored as a block of data placed on the heap, while the name (or "handle") to 
+        that object is represented by a pointer. Objects are passed between methods by copying 
+        the value of the pointer, allowing the same underlying data on the heap to be accessed by 
+        anyone with a copy. In contrast, basic types like integers and floating point values are 
+        represented directly; the handle contains the data, not a pointer to it, and that data is 
+        passed directly to methods by copying. These styles of access are termed pass-by-reference 
+        in the case of objects, and pass-by-value for basic types.
+    </div>
+    <div>
+        <h1>Memory management</h1>
+        Swift uses Automatic Reference Counting (ARC) to manage memory. Apple used to require manual 
+        memory management in Objective-C, but introduced ARC in 2011 to allow for easier memory 
+        allocation and deallocation.[59] One problem with ARC is the possibility of creating a strong 
+        reference cycle, where objects reference each other in a way that you can reach the object you 
+        started from by following references (e.g. A references B, B references A). This causes them to 
+        become leaked into memory as they are never released. Swift provides the keywords weak and 
+        unowned to prevent strong reference cycles. Typically a parent-child relationship would use a 
+        strong reference while a child-parent would use either weak reference, where parents and 
+        children can be unrelated, or unowned where a child always has a parent, but parent may not 
+        have a child. Weak references must be optional variables, since they can change and become 
+        nil.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.centered {
+    text-align: center;
+}
+#menu, .left {
+    float: left;
+}
+.split {
+    width:49%;
+    display: inline-block;
+}
+h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.big {
+    font-size: 4em;
+}
+body {
+    background: rgb(228, 164, 138);
+}
+
+
