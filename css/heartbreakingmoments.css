@@ -17,3 +17,6 @@ border: 8px solid honeydew;
 .right {
     text-align: right;
 }
+.flight {
+    float: left;
+}
